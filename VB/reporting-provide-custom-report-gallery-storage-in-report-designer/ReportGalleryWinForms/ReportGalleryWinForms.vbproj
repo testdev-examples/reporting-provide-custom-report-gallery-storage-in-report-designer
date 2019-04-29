@@ -53,10 +53,6 @@
     <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="XpoReportGalleryStorage, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BIN\XpoReportGalleryStorage.dll</HintPath>
-    </Reference>
     <Reference Include="DevExpress.CodeParser.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -189,6 +185,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XpoReportGalleryStorage\XpoReportGalleryStorage.csproj">
+      <Project>{a852a499-1e87-4f87-89c7-fc913c034615}</Project>
+      <Name>XpoReportGalleryStorage</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
