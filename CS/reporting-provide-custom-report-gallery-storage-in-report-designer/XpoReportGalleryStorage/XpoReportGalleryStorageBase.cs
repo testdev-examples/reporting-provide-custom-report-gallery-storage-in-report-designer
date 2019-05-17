@@ -18,7 +18,7 @@ namespace XpoReportGalleryStorage {
         }
 
         protected virtual string ConnectionString { get; } = AccessConnectionProvider.GetConnectionString(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Data\ReportGallery.mdb"));
-        
+
         ThreadSafeDataLayer CreateDataLayer() {
             var dictionary = PrepareDictionary();
             using(var updateDataLayer = XpoDefault.GetDataLayer(ConnectionString, dictionary, AutoCreateOption.DatabaseAndSchema)) {
@@ -49,7 +49,8 @@ namespace XpoReportGalleryStorage {
                 DisplayName = row.DisplayName,
                 ID = row.ID.ToString(),
                 ItemKind = row.ItemKind,
-                SID = row.SID
+                SID = row.SID,
+                ItemType = row.ItemType,               
             };
             return galleryItem;
         }
@@ -62,7 +63,8 @@ namespace XpoReportGalleryStorage {
                 DisplayName = galleryItem.DisplayName,
                 Content = galleryItem.Content,
                 Hash = galleryItem.GetHashCode(),
-                ContentHash = galleryItem.ContentHash
+                ContentHash = galleryItem.ContentHash,
+                ItemType = galleryItem.ItemType,
             };
             return table;
         }
@@ -71,6 +73,6 @@ namespace XpoReportGalleryStorage {
             var dict = new ReflectionDictionary();
             dict.GetDataStoreSchema(typeof(ReportGalleryTable));
             return dict;
-        }       
+        }
     }
 }

@@ -55,6 +55,7 @@ namespace XpoReportGalleryStorage {
                         changedItem.DisplayName = item.DisplayName;
                         changedItem.Hash = item.GetHashCode();
                         changedItem.ContentHash = item.ContentHash;
+                        changedItem.ItemType = item.ItemType;
                     }
                     if(changeType == GalleryChangeType.Add)
                         MapFromGalleryItem(item, unitOfWork);

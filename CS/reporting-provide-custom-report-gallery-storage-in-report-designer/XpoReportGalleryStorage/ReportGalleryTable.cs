@@ -1,4 +1,5 @@
 using DevExpress.Xpo;
+using DevExpress.XtraReports.ReportGallery;
 
 namespace XpoReportGalleryStorage {
     public class ReportGalleryTable : XPLiteObject {
@@ -6,6 +7,7 @@ namespace XpoReportGalleryStorage {
         string displayName;
         int hash;
         int contentHash;
+        GalleryItemType galleryItemType;
 
         public ReportGalleryTable(Session session) : base(session) {
         }
@@ -36,5 +38,11 @@ namespace XpoReportGalleryStorage {
             get { return contentHash; }
             set { SetPropertyValue("ContentHash", ref contentHash, value); }
         }
+
+        public GalleryItemType ItemType {
+            get { return galleryItemType; }
+            set { SetPropertyValue("ItemType", ref galleryItemType, value); }
+        }
+
     }
 }
