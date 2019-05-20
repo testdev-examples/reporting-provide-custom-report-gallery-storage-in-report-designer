@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28010.2046
+VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportGalleryWinForms", "reporting-provide-custom-report-gallery-storage-in-report-designer\ReportGalleryWinForms\ReportGalleryWinForms.csproj", "{1E430351-72D4-4C2D-ADDF-02D997730718}"
 EndProject
@@ -32,6 +32,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {98A6C537-1CD5-47F7-BF78-85FBBC51AB7D}
+		SolutionGuid = {BCFF209E-B478-4668-AC7D-E15FF7836D2F}
 	EndGlobalSection
 EndGlobal
