@@ -1,7 +1,7 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28307.271
+VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportGalleryWinForms", "reporting-provide-custom-report-gallery-storage-in-report-designer\ReportGalleryWinForms\ReportGalleryWinForms.csproj", "{1E430351-72D4-4C2D-ADDF-02D997730718}"
 EndProject
@@ -27,11 +27,11 @@ Global
 		{A852A499-1E87-4F87-89C7-FC913C034615}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A852A499-1E87-4F87-89C7-FC913C034615}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A852A499-1E87-4F87-89C7-FC913C034615}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
+		EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {BCFF209E-B478-4668-AC7D-E15FF7836D2F}
+		SolutionGuid = {740524CA-93D2-4901-BE08-952ABEEAE880}
 	EndGlobalSection
 EndGlobal
